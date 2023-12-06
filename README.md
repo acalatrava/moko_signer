@@ -5,7 +5,7 @@ This is a POC to generate a valid DFU package to be flashed for the https://gith
 ## Generate a valid DFU ZIP file (sign)
 First you need to copy the private key from the accessory in OpenHaystack by right-click on it and selecting `Copy private key B64`.
 
-The parameters needed are the `private.key`, the `firmware.bin` and the `base64 private key`.
+The parameters needed are the *DFU* `private.key`, the *original* `firmware.bin` and the *accessory* `base64 private key`.
 ```
 ❯ npm run signer -- --mode sign --privateKey ../private.key --firmwarePath ../firmware.bin --base64Key vedQnEUGLzEkVfSfqLaxobA+RihvVbFsrgQjzQ==
 DFU Package generated successfully to ./dfu.zip
